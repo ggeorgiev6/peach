@@ -1,0 +1,63 @@
+
+// Responsive 
+
+@mixin mobile {
+    @media (max-width: 640px) { @content; }
+}
+
+@mixin tablet {
+    @media (max-width: 1024px) { @content; }
+}
+
+@mixin large {
+    @media (min-width: 1025px) { @content; }
+}
+
+// Underline
+
+@mixin underline($color: $accent_color) {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+
+    &::before {
+        content: '';
+        height: 21px;
+        clip-path: $theme-shape;
+        background: $color;
+        width: 100%;
+        position: absolute;
+        bottom: 16px;
+        z-index: -1;
+        left: 0;
+    }
+}
+
+@mixin theme-list($color: $secondary_color){
+    list-style: none;
+
+    li {
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 9px;
+            mask-image: url('/images/icons/pagination-dot.svg');
+            background-color: $color;
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+@mixin pattern-background {
+    background-image: url('/images/patterns/pattern-bg-lg.svg');
+    background-position: center -5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

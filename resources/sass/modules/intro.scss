@@ -1,0 +1,64 @@
+.introSection {
+    padding-bottom: 120px;
+    position: relative;
+    display: block;
+    z-index: 4;
+    margin-top: -22px;
+
+    @include pattern-background;
+  
+}
+
+.introLeftSection {
+    position: relative;
+    margin-top: 184px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        clip-path: $theme-shape;
+        z-index: -1;
+        padding: 63px 66px 79px 93px;
+        
+    }
+
+    u {
+        @include underline;
+    }
+}
+
+.introTextWrap {
+    max-width: 530px;
+}
+
+.introRightSection {
+    margin-top: 438px;
+    position: relative;
+    padding: 10px;
+    font-weight: 500;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        clip-path: polygon(0 7%, 89% 0, 100% 92%, 8% 100%);
+        z-index: -1;
+        padding: 61px 51px 39px 75px;
+        
+    }
+
+    .button {
+        margin-top: 40px;
+    }
+}

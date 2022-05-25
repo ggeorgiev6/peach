@@ -1,0 +1,42 @@
+// Colors
+
+$primary_color: #0CCE6B;
+$secondary_color: #390049;
+$accent_color: #F2DC5D;
+$dark_color: #230B29;
+$light_color: #DDDEE0;
+
+// Theme Colors
+
+$theme-colors: (
+  "primary": $primary_color,
+  "secondary": $secondary_color,
+  "accent": $accent_color,
+  "dark": $dark_color,
+  "light": $light_color,
+  "white" : #fff,
+);
+
+
+// Fonts / Typography
+
+$primary-font: 'Poppins', sans-serif;
+$caption-font-size: 74px;
+$caption-font-size-mobile: 44px;
+
+
+// Bootstrap variables
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1249px
+);
+
+// $grid-gutter-width: 2.5rem;
+
+// Shapes
+$theme_shape: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
+

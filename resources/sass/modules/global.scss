@@ -1,0 +1,38 @@
+body {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .27px;
+    font-family: $primary-font;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mainPageWrap {
+    overflow: hidden;
+}
+
+// Create background classes based on the theme colors
+
+@each $color, $value in $theme-colors {
+    .bg-#{$color} {
+        background-color: $value;
+    }
+}
+
+.container,
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.row {
+
+    @include mobile {
+        padding: 0 20px;
+    }
+}
+

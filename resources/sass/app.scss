@@ -1,0 +1,25 @@
+
+
+// Variables
+@import 'modules/variables';
+
+// Mixins
+@import 'modules/mixins';
+
+// Typography
+@import 'modules/typography';
+
+// Buttons
+@import 'modules/buttons';
+
+// Bootstrap Grid
+@import "~bootstrap/scss/bootstrap-grid";
+
+// Global
+@import 'modules/global';
+
+// Partials
+@import "modules/slider";
+@import "modules/intro";
+@import "modules/services";
+@import "modules/cta";

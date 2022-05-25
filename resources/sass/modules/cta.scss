@@ -1,0 +1,13 @@
+.ctaSection {
+    padding-top: 165px;
+    @include pattern-background;
+}
+
+.ctaBlock {
+    padding: 47px 52px 46px 91px;
+    clip-path: polygon(4% 0, 96% 0, 100% 96%, 0 100%);
+}
+
+.ctaSectionBtn {
+    margin-top: 30px;
+}
