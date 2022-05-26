@@ -1,4 +1,4 @@
-<div class="ctaSection">
+<section class="ctaSection">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 offset-lg-1 col-lg-5">
@@ -24,4 +24,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
