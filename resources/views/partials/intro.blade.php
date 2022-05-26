@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-5">
                 <div class="introLeftSection">
-                    <h1>
+                    <h1 class="text-primary">
                         For those who know they can be more <u>successful,</u> the time is now.
                     </h1>
                 </div>
