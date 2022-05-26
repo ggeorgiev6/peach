@@ -31,9 +31,45 @@
 .testimonialsInnerText {
     max-width: 596px;
     font-weight: 600;
+    
+    &::before {
+        content: "“"; 
+        position: absolute;
+        top: -18px;
+        left: 0px;
+        font-size: 204px;
+        color: #F2DC5D;
+        display: block;
+        line-height: 1;
+    }
 }
 
 .testimonialsAuthor {
     margin-top: 50px;
     
+}
+
+.testimonialsSwiper.swiper {
+
+    @media all and (min-width: 1500px) {
+        margin-left: -114px;
+    }
+}
+
+.testimonialsInnerWrap {
+    padding-left: 111px;
+    position: relative;
+}
+
+.testimonialsControlsWrap {
+    margin-top: 53px;
+
+    @media all and (max-width: 1500px) {
+        padding-left: 114px;
+    }
+}
+
+.testimonialsCompany {
+    margin-top: 14px;
+    font-weight: 600;
 }
