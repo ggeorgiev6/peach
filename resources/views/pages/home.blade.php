@@ -5,4 +5,5 @@
     @include('partials.intro')
     @include('partials.services')
     @include('partials.cta')
+    @include('partials.testimonials')
 @endsection

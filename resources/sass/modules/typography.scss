@@ -37,11 +37,13 @@
     h#{$index}{
       font-family: $primary-font;
       margin: 0;
+      font-weight: 600;
     }
 
     .h#{$index}{
         font-family: $primary-font;
         margin: 0;
+        font-weight: 600;
     }
 }
 

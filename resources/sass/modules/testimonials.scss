@@ -1,0 +1,39 @@
+.testimonialsSection {
+    background-color: #F7F7F7;
+    padding: 238px 0 184px;
+    position: relative;
+} 
+
+.testimonialsControlsWrap {
+
+    .swiper-pagination-bullet {
+        background-color: $secondary_color;
+        opacity: .15;
+        transition: opacity .3s ease, background-color .3s ease;
+
+        &-active {
+            opacity: 1;
+            background-color: $primary-color;
+        }
+
+    }
+}
+
+.testimonialImg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.testimonialsInnerText {
+    max-width: 596px;
+    font-weight: 600;
+}
+
+.testimonialsAuthor {
+    margin-top: 50px;
+    
+}
