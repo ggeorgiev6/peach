@@ -27,11 +27,10 @@ if (document.querySelector(".sliderSection")) {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
-        // And if we need scrollbar
         scrollbar: {
-            el: '.swiper-scrollbar',
-        },
+            draggable: true,
+            dragSize: 100,
+          },
         });
 }
 
@@ -44,5 +43,32 @@ if (document.querySelector(".testimonialsSwiper")) {
             el: '.testimonials-pagination-slider',
             clickable: true,
         },
+        scrollbar: {
+            draggable: true,
+            dragSize: 100,
+          },
         });
   }
+
+// Partners slider
+
+if (document.querySelector(".partnersSlider")) {
+    const swiper3 = new Swiper('.partnersSlider', {
+        loop: true,
+        pagination: {
+            el: '.partners-pagination-slider',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.partners-slider-button-next',
+            prevEl: '.partners-slider-button-prev',
+        },
+        slidesPerView: 4,
+        spaceBetween: 78,
+        scrollbar: {
+            draggable: true,
+            dragSize: 100,
+          },
+    });
+  }
+
