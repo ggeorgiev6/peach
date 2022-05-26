@@ -1,0 +1,35 @@
+.latestNewsSection {
+    padding: 102px 0 109px;
+}
+
+.latestNewsHeading {
+    font-size: $caption-font-size;
+    font-weight: 600;
+    margin-right: auto;
+
+    u {
+        @include underline($primary-color);
+        padding-right: 28px;
+    }
+}
+
+.latestNewsHeadWrap {
+    display: flex;
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardsRow {
+    margin-top: 90px;
+}
+
+.cardCol {
+
+    &:nth-child(2) {
+
+        @include large {
+            margin-top: 70px;
+        }
+    }
+}
