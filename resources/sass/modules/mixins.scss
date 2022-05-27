@@ -15,7 +15,7 @@
 
 // Underline
 
-@mixin underline($color: $accent_color) {
+@mixin underline($color: $accent_color, $size: 'regular') {
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -23,14 +23,23 @@
 
     &::before {
         content: '';
-        height: 21px;
-        clip-path: $theme-shape;
         background: $color;
         width: 100%;
         position: absolute;
-        bottom: 16px;
         z-index: -1;
         left: 0;
+
+        @if $size == 'regular' {
+            height: 21px;
+            bottom: 16px;
+            clip-path: $theme-shape;
+        }
+
+        @if $size == 'small' {
+            height: 8px;
+            bottom: 4px;
+            clip-path: polygon(0 7%, 98% 0, 100% 100%, 0 93%);
+        }
     }
 }
 

@@ -181,6 +181,10 @@ ul {
   padding: 0;
 }
 
+.fw-medium {
+  font-weight: 500;
+}
+
 .fw-semi-bold {
   font-weight: 600;
 }
@@ -5391,18 +5395,40 @@ button.empty::after {
 
 .socialMediaLinks {
   display: flex;
-  grid-gap: 10px;
+  grid-gap: 14px;
   align-items: center;
 }
 .socialMediaLinks li {
   list-style-type: none;
   position: relative;
 }
-.socialMediaLinks li svg {
+.socialMediaLinks li:nth-child(2) .socialMediaIconShape {
+  transform: rotate(103deg) translateY(4px) translateX(-2px);
+}
+.socialMediaLinks li:nth-child(3) .socialMediaIconShape {
+  transform: rotate(205deg) translateY(6px) translateX(2px);
+}
+.socialMediaLinks li:nth-child(3) .socialMediaIconElem {
+  transform: translate(-54%, -57%);
+}
+.socialMediaLinks li:nth-child(4) .socialMediaIconShape {
+  transform: rotate(298deg) translateY(1px) translateX(3px);
+}
+.socialMediaLinks li:nth-child(4) .socialMediaIconElem {
+  transform: translate(-54%, -54%);
+}
+.socialMediaLinks li svg .path1 {
+  fill: #0CCE6B;
   transition: all 0.3s ease;
 }
-.socialMediaLinks li:hover svg {
+.socialMediaLinks li svg .path2 {
+  stroke: #0CCE6B;
+  transition: all 0.3s ease;
+}
+.socialMediaLinks li:hover svg .path1 {
   fill: #F2DC5D;
+}
+.socialMediaLinks li:hover svg .path2 {
   stroke: #F2DC5D;
 }
 
@@ -5411,6 +5437,37 @@ button.empty::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.footerSubscribeNotice {
+  margin-top: 21px;
+}
+
+.footerSubscribeLink {
+  margin-top: 20px;
+}
+
+.footerBottomRow {
+  margin-top: 83px;
+}
+
+.footerBottomLink {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+}
+.footerBottomLink::before {
+  content: "";
+  background: #0CCE6B;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  height: 8px;
+  bottom: 4px;
+  -webkit-clip-path: polygon(0 7%, 98% 0, 100% 100%, 0 93%);
+          clip-path: polygon(0 7%, 98% 0, 100% 100%, 0 93%);
 }
 
 body {
@@ -5529,15 +5586,15 @@ img {
 }
 .card .cardCategory::before {
   content: "";
-  height: 21px;
-  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
-          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
   background: #F2DC5D;
   width: 100%;
   position: absolute;
-  bottom: 16px;
   z-index: -1;
   left: 0;
+  height: 21px;
+  bottom: 16px;
+  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
+          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
 }
 .card .cardCategory::before {
   height: 10px;
@@ -5604,15 +5661,15 @@ img {
 }
 .sliderText u::before {
   content: "";
-  height: 21px;
-  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
-          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
   background: #F2DC5D;
   width: 100%;
   position: absolute;
-  bottom: 16px;
   z-index: -1;
   left: 0;
+  height: 21px;
+  bottom: 16px;
+  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
+          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
 }
 
 .sliderButton {
@@ -5699,15 +5756,15 @@ img {
 }
 .introLeftSection u::before {
   content: "";
-  height: 21px;
-  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
-          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
   background: #F2DC5D;
   width: 100%;
   position: absolute;
-  bottom: 16px;
   z-index: -1;
   left: 0;
+  height: 21px;
+  bottom: 16px;
+  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
+          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
 }
 
 .introTextWrap {
@@ -5758,15 +5815,15 @@ img {
 }
 .serviceHeading u::before {
   content: "";
-  height: 21px;
-  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
-          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
   background: #0CCE6B;
   width: 100%;
   position: absolute;
-  bottom: 16px;
   z-index: -1;
   left: 0;
+  height: 21px;
+  bottom: 16px;
+  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
+          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
 }
 
 .serviceSubtitle {
@@ -5991,15 +6048,15 @@ img {
 }
 .latestNewsHeading u::before {
   content: "";
-  height: 21px;
-  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
-          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
   background: #0CCE6B;
   width: 100%;
   position: absolute;
-  bottom: 16px;
   z-index: -1;
   left: 0;
+  height: 21px;
+  bottom: 16px;
+  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
+          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
 }
 
 .latestNewsHeadWrap {
@@ -6060,15 +6117,15 @@ img {
 }
 .callbackTitle u::before {
   content: "";
-  height: 21px;
-  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
-          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
   background: #0CCE6B;
   width: 100%;
   position: absolute;
-  bottom: 16px;
   z-index: -1;
   left: 0;
+  height: 21px;
+  bottom: 16px;
+  -webkit-clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
+          clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);
 }
 
 .callbackBtn {

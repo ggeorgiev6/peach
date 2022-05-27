@@ -14,24 +14,71 @@
 
 .socialMediaLinks {
     display: flex;
-    grid-gap: 10px;
+    grid-gap: 14px;
     align-items: center;
 
     li {
         list-style-type: none;
         position: relative;
 
+        &:nth-child(2) {
+
+            .socialMediaIconShape {
+                transform: rotate(103deg) translateY(4px) translateX(-2px);
+            }
+        }
+
+        &:nth-child(3) {
+
+            .socialMediaIconShape {
+                transform: rotate(205deg) translateY(6px) translateX(2px);
+            }
+
+            .socialMediaIconElem {
+                transform: translate(-54%, -57%);
+            }
+        }
+
+        &:nth-child(4) {
+
+            .socialMediaIconShape {
+                transform: rotate(298deg) translateY(1px) translateX(3px)
+            }
+
+            .socialMediaIconElem {
+                transform: translate(-54%, -54%);
+            }
+        }
+
         svg {
-            transition: all .3s ease;
+
+            .path1 {
+                fill: $primary_color;
+                transition: all .3s ease;
+            }
+
+            .path2 {
+                stroke: $primary_color;
+                transition: all .3s ease;
+            }
+
         }
 
         &:hover {
 
             svg {
-                fill: $accent_color;
-                stroke: $accent_color;
+
+                .path1 {
+                    fill: $accent_color;
+                }
+
+                .path2 {
+                    stroke: $accent_color;
+                }
+                 
             }
         }
+        
     }
 }
 
@@ -40,4 +87,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.footerSubscribeNotice {
+    margin-top: 21px;
+}
+
+.footerSubscribeLink {
+    margin-top: 20px;
+}
+
+.footerBottomRow {
+    margin-top: 83px;
+}
+
+.footerBottomLink {
+    @include underline($primary_color, 'small');
 }
