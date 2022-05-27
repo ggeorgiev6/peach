@@ -61,3 +61,10 @@
     background-repeat: no-repeat;
 }
 
+@mixin pattern-shape {
+    background-image: url('/images/patterns/pattern-shape.svg');
+    background-position: center -120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

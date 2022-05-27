@@ -1,0 +1,38 @@
+.callbackSection {
+    padding: 90px 0;
+    background-color: $accent-color;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include pattern-shape;
+    }
+}
+
+.callbackShape {
+    max-width: 528px;
+    margin: auto;
+}
+
+.callbackInner {
+    position: relative;
+    clip-path: polygon(5% 0, 95% 0, 100% 95%, 0% 100%);
+    padding: 76px 108px  83px 113px;
+}
+
+.callbackTitle {
+    margin-top: 15px;
+
+    u {
+        @include underline($primary_color);
+    }
+}
+
+.callbackBtn {
+    margin-top: 18px;
+}

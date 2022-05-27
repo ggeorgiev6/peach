@@ -8,4 +8,5 @@
     @include('partials.testimonials')
     @include('partials.partners')
     @include('partials.latest')
+    @include('partials.callback')
 @endsection
