@@ -1,3 +1,11 @@
+.topSlider {
+    display: none;
+
+    &.swiper-initialized {
+        display: block;
+    }
+}
+
 .sliderSection {
     padding-top: 230px;
     background-color: $primary-color;
@@ -69,4 +77,25 @@
 .sliderControlsWrap {
     display: flex;
     align-items: center;
+}
+
+.topSliderNav {
+    cursor: pointer;
+
+    &:hover {
+
+        svg path {
+            fill: $accent_color;
+        }
+
+    }
+
+    svg path {
+        fill: #fff;
+        transition: fill .3s ease
+    }
+}
+
+.topSliderNavPrev {
+    margin-right: 18px;
 }

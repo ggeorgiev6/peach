@@ -5,6 +5,7 @@ import Swiper from 'swiper/bundle';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 
 Vue.component('slider', require('./components/slider.vue').default);
@@ -18,7 +19,19 @@ new Vue({
 
 if (document.querySelector(".sliderSection")) {
     const swiper1 = new Swiper('.topSlider', {
-        loop: true,
+        fadeEffect: { 
+            crossFade: true, 
+        },
+        virtualTranslate: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+        speed: 1000, 
+        slidersPerView: 1,
+        effect: "fade",
+        // loop: true,
+        effect: "fade",
         pagination: {
             el: '.swiper-pagination-slider',
             clickable: true,
