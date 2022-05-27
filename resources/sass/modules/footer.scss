@@ -1,0 +1,43 @@
+.footerWrap {
+    padding: 97px 0 47px;
+}
+
+.footerNavList {
+    margin-top: 41px;
+
+    li {
+        list-style-type: none;
+        font-weight: 500;
+        margin-top: 16px;
+    }
+}
+
+.socialMediaLinks {
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+
+    li {
+        list-style-type: none;
+        position: relative;
+
+        svg {
+            transition: all .3s ease;
+        }
+
+        &:hover {
+
+            svg {
+                fill: $accent_color;
+                stroke: $accent_color;
+            }
+        }
+    }
+}
+
+.socialMediaIconElem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
