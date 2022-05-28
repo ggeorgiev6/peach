@@ -1,8 +1,16 @@
 .topSlider {
-    display: none;
+
+    .swiper-wrapper .swiper-slide:nth-child(n+2) {
+        display: none;
+    }
+   
 
     &.swiper-initialized {
-        display: block;
+        
+        
+        .swiper-wrapper .swiper-slide:nth-child(n+2) {
+            display: block;
+        }
     }
 }
 

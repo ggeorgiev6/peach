@@ -25,7 +25,7 @@
         clip-path: $theme-shape;
         z-index: -1;
         padding: 63px 66px 79px 93px;
-        
+        box-sizing: unset;
     }
 
     u {
@@ -55,7 +55,7 @@
         clip-path: polygon(0 7%, 89% 0, 100% 92%, 8% 100%);
         z-index: -1;
         padding: 61px 51px 39px 75px;
-        
+        box-sizing: unset;
     }
 
     .button {

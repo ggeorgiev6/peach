@@ -15,9 +15,15 @@
 
             @include('partials.global.nav')
 
-            @yield('content')
+            <div class="innerPageWrap">
 
-            @include('partials.global.foot')
+                @yield('content')
+
+                @include('partials.global.foot')
+                
+            </div>
+
+            
             
         </div>
 

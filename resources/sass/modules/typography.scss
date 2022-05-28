@@ -106,15 +106,19 @@ h6,
 
 
 a {
-    color: $primary_color;
+    color: inherit;
     text-decoration: none;
+
+    &:hover {
+        color: inherit;
+    }
 }
 
 .text-center {
     text-align: center;
 }
 
-ul {
+ul, ol {
     padding: 0;
 }
 

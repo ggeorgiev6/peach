@@ -8,6 +8,9 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 
+
+
+
 Vue.component('slider', require('./components/slider.vue').default);
 
 // Create a new Vue app
@@ -30,7 +33,7 @@ if (document.querySelector(".sliderSection")) {
         speed: 1000, 
         slidersPerView: 1,
         effect: "fade",
-        // loop: true,
+        loop: true,
         effect: "fade",
         pagination: {
             el: '.swiper-pagination-slider',
@@ -85,3 +88,24 @@ if (document.querySelector(".partnersSlider")) {
     });
   }
 
+
+// Nav
+
+const menuTrigger = document.querySelectorAll('.menuTrigger');
+const sideMenu = document.querySelector('.sideNavWrap');
+const overlay = document.querySelector('.siteOverlay');
+const body = document.querySelector('body');
+
+// menuTrigger.addEventListener('click', function() {
+//     menuTrigger.classList.toggle('active');
+//     sideMenu.classList.toggle('open');
+//     body.classList.toggle('showOverlay');
+// });
+
+Array.from(menuTrigger).forEach(menuTriggerLink => {
+    menuTriggerLink.addEventListener('click', function(event) {
+        menuTriggerLink.classList.toggle('active');
+        sideMenu.classList.toggle('open');
+        body.classList.toggle('showOverlay');
+    });
+});

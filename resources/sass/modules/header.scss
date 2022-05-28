@@ -1,0 +1,85 @@
+header {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 38px 35px;
+    z-index: 100;
+}
+
+.navWrap {
+    display: flex;
+    align-items: center;
+    z-index: 200;
+}
+
+.logoWrap {
+    margin-right: auto;
+}
+
+.sideNavWrap {
+    background-color: white;
+    height: 100vh;
+    width: 80%;
+    max-width: 670px;
+    right: 0;
+    position: fixed;
+    padding: 55px 106px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateX(100%);
+    z-index: 400;
+    top: 0;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.menuTriggerWrap {
+    cursor: pointer;
+    z-index: 300;
+}
+
+.sideLinks {
+    margin-top: 65px;
+
+    .sideLinkItem {
+        font-size: 44px;
+        list-style-type: none;
+        display: block;
+
+        &:not(:first-child) {
+            margin-top: 28px;
+        }
+    
+        a {
+            @include underline($primary-color) ;
+    
+            &::before {
+                opacity: 0;
+                transition: opacity .3s ease;
+            }
+    
+            &:hover {
+    
+                &::before {
+                    opacity: 1;
+                }
+    
+            }
+        }
+    }
+}
+
+
+
+.closeSideMenuWrap {
+    position: absolute;
+    top: 53px;
+    right: 47px;
+    cursor: pointer;
+}
