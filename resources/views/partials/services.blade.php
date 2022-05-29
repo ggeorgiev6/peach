@@ -2,13 +2,13 @@
     <div class="container serviceSectionContent">
         <div class="row text-center">
             <div class="col-12 offset-md-1 col-md-10 ">
-                <h2 class="serviceHeading">
+                <h2 class="serviceHeading fadeInLeft scrollItem">
                     It’s time to make your business <u>awesome.</u> 
                 </h2>
                
             </div>
             <div class="col-12 offset-md-2 col-md-8">
-                <div class="serviceSubtitle h2 text-white">
+                <div class="serviceSubtitle h2 text-white fadeInRight scrollItem">
                         We are the only company in the UK to offer this completely unique system of business assessment and transformation.
                     </div>
                 </div>

@@ -113,7 +113,7 @@ Array.from(animatedMenuItems).forEach((animatedMenuItem, index) => {
         animatedMenuItem.classList.add('fadeInBottom')
     }
 
-    animatedMenuItem.style.animationDelay = index * 0.2 + 's';
+    animatedMenuItem.style.animationDelay = index * 0.17 + 's';
 });
 
 
@@ -141,10 +141,26 @@ Array.from(menuTrigger).forEach(menuTriggerLink => {
 
 // Lazyload images
 
-
-
-
 var lazyLoadInstance = new LazyLoad({
 	elements_selector: ".lazy",
     skip_invisible: false
 });
+
+// Scroll reveal intersection observer
+
+const scroll_items = document.querySelectorAll(".scrollItem");
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("triggered")
+    }
+  })
+}
+const options = {}
+
+const myObserver = new IntersectionObserver(callback, options)
+
+scroll_items.forEach(item => {
+    myObserver.observe(item)         
+})

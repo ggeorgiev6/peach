@@ -6,7 +6,7 @@
           <div class="row">
               <div class="col-md-7">
 
-                    <div class="swiper topSlider">
+                    <div class="swiper topSlider fadeInBottom scrollItem">
     
                         <div class="swiper-wrapper">
                         

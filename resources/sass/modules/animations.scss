@@ -7,6 +7,15 @@
     }
 }
 
+.fadeInRight {
+    opacity: 0;
+    transform: translateX(-80px);
+
+    &.triggered {
+        animation: fadeInRight 500ms ease-in-out forwards;
+    }
+}
+
 .fadeInBottom {
     opacity: 0;
     transform: translateY(40px);
@@ -20,6 +29,17 @@
     0% {
         opacity: 0;
         transform: translateX(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
     }
     100% {
         opacity: 1;
