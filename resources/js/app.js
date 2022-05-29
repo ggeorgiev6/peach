@@ -2,9 +2,9 @@ require('./bootstrap');
 // import '@babel/polyfill';
 
 import Vue from 'vue';
-// Import Swiper Vue.js components
 import Swiper from 'swiper/bundle';
 import SvgVue from 'svg-vue';
+import LazyLoad from "vanilla-lazyload";
 Vue.use(SvgVue);
 
 // Import Swiper styles
@@ -99,17 +99,52 @@ if (document.querySelector(".partnersSlider")) {
   }
 
 
-// Nav
+// Side Menu animations
+
+const animatedMenuItems = document.querySelectorAll('.animatedSideItem');
+console.log(animatedMenuItems);
+
+Array.from(animatedMenuItems).forEach((animatedMenuItem, index) => {
+    console.log(animatedMenuItem.classList);
+
+    if (animatedMenuItem.classList.contains('sideLinkItem')) {
+        animatedMenuItem.classList.add('fadeInLeft')
+    } else {
+        animatedMenuItem.classList.add('fadeInBottom')
+    }
+
+    animatedMenuItem.style.animationDelay = index * 0.2 + 's';
+});
+
+
+// Navigation trigger
 
 const menuTrigger = document.querySelectorAll('.menuTrigger');
 const sideMenu = document.querySelector('.sideNavWrap');
 const overlay = document.querySelector('.siteOverlay');
 const body = document.querySelector('body');
+const animated_items = document.querySelectorAll('.animatedSideItem');
 
 Array.from(menuTrigger).forEach(menuTriggerLink => {
     menuTriggerLink.addEventListener('click', function(event) {
         menuTriggerLink.classList.toggle('active');
         sideMenu.classList.toggle('open');
         body.classList.toggle('showOverlay');
+        Array.from(animated_items).forEach(animatedItem => {
+            setTimeout(function(){
+                animatedItem.classList.toggle('triggered');
+            }, 600)
+            
+        });
     });
+});
+
+// Lazyload images
+
+
+
+
+var lazyLoadInstance = new LazyLoad({
+	elements_selector: ".lazy",
+    skip_invisible: false
 });

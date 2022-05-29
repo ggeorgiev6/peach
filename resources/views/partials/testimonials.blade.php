@@ -65,6 +65,6 @@
         </div>
     </div>
     <div class="testimonialImg">
-        <img src="/images/testimonial-puzzle.png" alt="">
+        <img class="lazy" data-src="/images/testimonial-puzzle.png" alt="">
     </div>
 </section>

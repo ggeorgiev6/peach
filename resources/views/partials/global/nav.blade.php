@@ -9,7 +9,7 @@
     </div>
 
     <div class="innerSideNavWrap">
-        <div class="sideLogo">
+        <div class="sideLogo animatedSideItem">
             <a href="">
                 {!! file_get_contents('images/elation-brandmark-logo.svg') !!}
             </a>
@@ -17,27 +17,27 @@
 
         <ul class="sideLinks">
 
-            <li class="sideLinkItem text-white h2">
+            <li class="sideLinkItem text-white h2 animatedSideItem">
                 <a class="" href="">Us</a>
             </li>
 
-            <li class="sideLinkItem text-white h2">
+            <li class="sideLinkItem text-white h2 animatedSideItem">
                 <a class="" href="">You</a>
             </li>
 
-            <li class="sideLinkItem text-white h2">
+            <li class="sideLinkItem text-white h2 animatedSideItem">
                 <a class="" href="">Services</a>
             </li>
 
-            <li class="sideLinkItem text-white h2">
+            <li class="sideLinkItem text-white h2 animatedSideItem">
                 <a class="" href="">Resources</a>
             </li>
 
-            <li class="sideLinkItem text-white h2">
+            <li class="sideLinkItem text-white h2 animatedSideItem">
                 <a class="" href="">Blog</a>
             </li>
 
-            <li class="sideLinkItem text-white h2">
+            <li class="sideLinkItem text-white h2 animatedSideItem">
                 <a class="" href="">Contact</a>
             </li>
 
@@ -45,7 +45,7 @@
 
         <div class="sideSocialMediaLinks">
             <ul class="socialMediaLinks ">
-                <li class="socialMediaIcon">
+                <li class="socialMediaIcon animatedSideItem">
                     <a class="" href="">
                         <div class="socialMediaIconShape">
                             {!! file_get_contents('images/icons/sm-shape.svg') !!}
@@ -57,7 +57,7 @@
                     </a>
                 </li>
 
-                <li class="socialMediaIcon">
+                <li class="socialMediaIcon animatedSideItem">
                     <a class="" href="">
                         <div class="socialMediaIconShape">
                             {!! file_get_contents('images/icons/sm-shape.svg') !!}
@@ -69,7 +69,7 @@
                     </a>
                 </li>
 
-                <li class="socialMediaIcon">
+                <li class="socialMediaIcon animatedSideItem">
                     <a class="" href="">
                         <div class="socialMediaIconShape">
                             {!! file_get_contents('images/icons/sm-shape.svg') !!}
@@ -81,7 +81,7 @@
                     </a>
                 </li>
 
-                <li class="socialMediaIcon">
+                <li class="socialMediaIcon animatedSideItem">
                     <a class="" href="">
                         <div class="socialMediaIconShape">
                             {!! file_get_contents('images/icons/sm-shape.svg') !!}

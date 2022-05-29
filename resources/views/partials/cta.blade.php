@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 offset-lg-1 col-lg-4">
                 <div class="ctaImageBlock">
-                    <img src="/images/user-img.png" alt="">
+                    <img class="lazy" data-src="/images/user-img.png" alt="">
                 </div>
             </div>
             <div class="col-12 offset-lg-1 col-lg-5">

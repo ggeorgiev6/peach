@@ -24,7 +24,7 @@
                         <div class="outerCardShape"></div>
                         <div class="innerCardShape text-center">
                             <div class="innerCardBg">
-                                <img class="innerCardImg" src="/images/news_image_2.jpg" alt="">
+                                <img class="innerCardImg lazy" data-src="/images/news_image_2.jpg" alt="">
                             </div>
                             <div class="innerCardText fw-semi-bold">
                                 <div class="cardCategory text-secondary h3 ">Resources</div>
@@ -45,7 +45,7 @@
                         <div class="outerCardShape"></div>
                         <div class="innerCardShape text-center">
                             <div class="innerCardBg">
-                                <img class="innerCardImg" src="/images/news_image_1.jpg" alt="">
+                                <img class="innerCardImg lazy" data-src="/images/news_image_1.jpg" alt="">
                             </div>
                             <div class="innerCardText fw-semi-bold">
                                 <div class="cardCategory text-secondary h3 ">Resources</div>
@@ -66,7 +66,7 @@
                         <div class="outerCardShape"></div>
                         <div class="innerCardShape text-center">
                             <div class="innerCardBg">
-                                <img class="innerCardImg" src="/images/news_image_2.jpg" alt="">
+                                <img class="innerCardImg lazy" data-src="/images/news_image_2.jpg" alt="">
                             </div>
                             <div class="innerCardText fw-semi-bold">
                                 <div class="cardCategory text-secondary h3 ">Resources</div>
