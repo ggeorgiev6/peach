@@ -18,8 +18,8 @@
                             through barriers to let your business thrive.
                         </p>
                         <a class="button dark" href="">
-                            What we offer
-                            <span class="outline"></span>
+                           
+                            <span class="outline"> What we offer</span>
                         </a>
                     </div>
                 </div>

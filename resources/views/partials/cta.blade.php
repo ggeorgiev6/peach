@@ -17,8 +17,7 @@
                         knowledge to your advantage.
                     </p>
                     <a href="" class="button ctaSectionBtn">
-                        About Us
-                        <span class="outline"></span>
+                        <span class="outline">About Us</span>
                     </a>
                 </div>
             </div>

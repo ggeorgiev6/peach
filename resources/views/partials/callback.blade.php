@@ -7,8 +7,7 @@
                         <h6 class="callbackIntroTitle h2">There’s never been<br> a better time to start.</h6>
                         <h6 class="h1 callbackTitle">The time is <u>now.</u></h6>
                         <a class="button dark callbackBtn" href="">
-                            Talk to us
-                            <span class="outline"></span>
+                            <span class="outline">Talk to us</span>
                         </a>
                     </div>
                 </div>
