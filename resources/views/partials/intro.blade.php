@@ -1,14 +1,14 @@
 <section class="introSection">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="introLeftSection">
                     <h1 class="text-primary">
                         For those who know they can be more <u>successful,</u> the time is now.
                     </h1>
                 </div>
             </div>
-            <div class="col-12 offset-md-2 col-md-4">
+            <div class="col-12 offset-lg-2 col-lg-4">
                 <div class="introRightSection">
                     <p>
                         The Growth Academy gives business leaders the tools to implement a blueprint 

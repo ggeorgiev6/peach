@@ -30,13 +30,13 @@
 
 .testimonialsInnerText {
     max-width: 596px;
-    font-weight: 600;
+    line-height: 1.25;
     
     &::before {
         content: "“"; 
         position: absolute;
-        top: -18px;
-        left: 0px;
+        top: -4px;
+        left: 11px;
         font-size: 204px;
         color: #F2DC5D;
         display: block;

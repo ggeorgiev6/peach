@@ -2,8 +2,20 @@ header {
     position: fixed;
     background-color: transparent;
     width: 100%;
-    padding: 37px 34px;
     z-index: 100;
+    padding: 37px 0;
+
+    @include media-breakpoint-up(xxl) {
+        padding: 37px 34px;
+    }
+}
+
+.headerContainer {
+
+    @include media-breakpoint-up(xxl) {
+        max-width: 100%;
+    }
+
 }
 
 .navWrap {
@@ -14,6 +26,14 @@ header {
 
 .logoWrap {
     margin-right: auto;
+
+    svg {
+
+        @include media-breakpoint-down(md) {
+            height: 40px;
+            width: auto;
+        }
+    }
 }
 
 .sideNavWrap {
@@ -31,6 +51,11 @@ header {
     z-index: 400;
     top: 0;
     clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+    overflow-y: auto;
+
+    @include media-breakpoint-down(md) {
+        padding: 37px 27px 0 52px;
+    }
 
     &.open {
         visibility: visible;
@@ -44,6 +69,29 @@ header {
     z-index: 300;
 }
 
+.menuTrigger {
+
+    svg {
+        @include media-breakpoint-down(md) {
+            height: 16px;
+            width: auto;
+        }
+    }
+
+    svg path {
+        fill: #fff;
+        transition: fill .3s ease;
+    }
+
+    &:hover {
+
+        svg path {
+            fill: $accent-color;
+        }
+        
+    }
+}
+
 .sideLinks {
     margin-top: 65px;
 
@@ -52,16 +100,33 @@ header {
         list-style-type: none;
         display: block;
 
+        @include media-breakpoint-down(md) {
+            font-size: 32px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 23px;
+        }
+
         &:not(:first-child) {
             margin-top: 28px;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 9px;
+            }
         }
     
         a {
-            @include underline($primary-color) ;
+            @include underline($color: $primary-color, $size: 'medium', $bottom: 12px) ;
     
             &::before {
                 opacity: 0;
                 transition: opacity .3s ease;
+
+                @include media-breakpoint-down(md) {
+                    bottom: 8px;
+                    height: 8px;
+                }
             }
     
             &:hover {
@@ -75,6 +140,9 @@ header {
     }
 }
 
+.sideSocialMediaLinks {
+    margin-top: 70px;
+}
 
 
 .closeSideMenuWrap {
@@ -82,4 +150,12 @@ header {
     top: 53px;
     right: 47px;
     cursor: pointer;
+}
+
+.sideLogo svg {
+
+    @include media-breakpoint-down(md) {
+        height: 56px;
+        width: auto;
+    }
 }

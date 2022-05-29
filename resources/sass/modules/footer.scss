@@ -1,5 +1,7 @@
 .footerWrap {
     padding: 97px 0 47px;
+    clip-path: polygon(0% 0, 100% 6%, 100% 100%, 0 100%);
+    margin-top: -31px;
 }
 
 .footerNavList {
@@ -9,6 +11,13 @@
         list-style-type: none;
         font-weight: 500;
         margin-top: 16px;
+
+        a {
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
     }
 }
 
@@ -16,6 +25,7 @@
     display: flex;
     grid-gap: 14px;
     align-items: center;
+    flex-wrap: wrap;
 
     li {
         list-style-type: none;
@@ -24,14 +34,14 @@
         &:nth-child(2) {
 
             .socialMediaIconShape {
-                transform: rotate(103deg) translateY(4px) translateX(-2px);
+                transform: rotate(112deg) translateY(0px) translateX(1px);
             }
         }
 
         &:nth-child(3) {
 
             .socialMediaIconShape {
-                transform: rotate(205deg) translateY(6px) translateX(2px);
+                transform: rotate(205deg) translateY(-2px) translateX(1px);
             }
 
             .socialMediaIconElem {
@@ -42,44 +52,49 @@
         &:nth-child(4) {
 
             .socialMediaIconShape {
-                transform: rotate(298deg) translateY(1px) translateX(3px)
+                transform: rotate(298deg) translateY(0px) translateX(-1px);
             }
 
             .socialMediaIconElem {
                 transform: translate(-54%, -54%);
             }
         }
+        
+    }
+}
+
+.socialMediaIcon {
+    position: relative;
+
+    svg {
+
+        .path1 {
+            fill: $primary_color;
+            transition: all .4s ease;
+        }
+
+        .path2 {
+            stroke: $primary_color;
+            transition: all .4s ease;
+        }
+
+    }
+
+    &:hover {
 
         svg {
 
             .path1 {
-                fill: $primary_color;
-                transition: all .55s ease;
+                fill: $accent_color;
             }
 
             .path2 {
-                stroke: $primary_color;
-                transition: all .55s ease;
+                stroke: $accent_color;
             }
-
+             
         }
-
-        &:hover {
-
-            svg {
-
-                .path1 {
-                    fill: $accent_color;
-                }
-
-                .path2 {
-                    stroke: $accent_color;
-                }
-                 
-            }
-        }
-        
     }
+
 }
 
 .socialMediaIconElem {
@@ -90,11 +105,23 @@
 }
 
 .footerSubscribeNotice {
-    margin-top: 21px;
+    margin-top: 28px;
+    max-width: 209px;
 }
 
 .footerSubscribeLink {
     margin-top: 20px;
+}
+
+.footerSubscribeLinkItem {
+
+    &:hover {
+        color: $accent-color;
+
+        &::after {
+            background-color: $accent-color;
+        }
+    }
 }
 
 .footerBottomRow {
@@ -102,5 +129,9 @@
 }
 
 .footerBottomLink {
-    @include underline($primary_color, 'small');
+    @include underline($color: $primary_color, $size: 'small', $bottom: 3px);
+}
+
+.copyrightNotice {
+    font-size: 16px;
 }

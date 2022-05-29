@@ -130,7 +130,7 @@ button {
         background-color: $primary-color;
         width: 16px;
         height: 16px;
-        transition: margin-left .3s ease;
+        transition: margin-left .3s ease, color 3s ease;
         position: relative;
         margin-left: 9px;
         display: inline-block;

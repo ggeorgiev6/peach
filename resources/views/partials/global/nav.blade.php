@@ -1,5 +1,5 @@
 <header>
-    <div class="container-fluid">
+    <div class="container headerContainer">
         <div class="row">
             <div class="col">
                 <div class="navWrap">
@@ -64,5 +64,59 @@
                             </li>
 
                         </ul>
+
+                        <div class="sideSocialMediaLinks">
+                            <ul class="socialMediaLinks ">
+                                <li class="socialMediaIcon">
+                                    <a class="" href="">
+                                        <div class="socialMediaIconShape">
+                                            {!! file_get_contents('images/icons/sm-shape.svg') !!}
+                                        </div>
+                                        <div class="socialMediaIconElem">
+                                            {!! file_get_contents('images/icons/fb-icon.svg') !!}
+                                        </div>
+                                    
+                                    </a>
+                                </li>
+
+                                <li class="socialMediaIcon">
+                                    <a class="" href="">
+                                        <div class="socialMediaIconShape">
+                                            {!! file_get_contents('images/icons/sm-shape.svg') !!}
+                                        </div>
+                                        <div class="socialMediaIconElem">
+                                            {!! file_get_contents('images/icons/twitter-icon.svg') !!}
+                                        </div>
+                                    
+                                    </a>
+                                </li>
+
+                                <li class="socialMediaIcon">
+                                    <a class="" href="">
+                                        <div class="socialMediaIconShape">
+                                            {!! file_get_contents('images/icons/sm-shape.svg') !!}
+                                        </div>
+                                        <div class="socialMediaIconElem">
+                                            {!! file_get_contents('images/icons/linkedin-icon.svg') !!}
+                                        </div>
+                                    
+                                    </a>
+                                </li>
+
+                                <li class="socialMediaIcon">
+                                    <a class="" href="">
+                                        <div class="socialMediaIconShape">
+                                            {!! file_get_contents('images/icons/sm-shape.svg') !!}
+                                        </div>
+                                        <div class="socialMediaIconElem">
+                                            {!! file_get_contents('images/icons/instagram-icon.svg') !!}
+                                        </div>
+                                    
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  
+
+
                     </div>
                 </div>

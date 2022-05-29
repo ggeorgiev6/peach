@@ -1,21 +1,6 @@
-
-// Responsive 
-
-@mixin mobile {
-    @media (max-width: 640px) { @content; }
-}
-
-@mixin tablet {
-    @media (max-width: 1024px) { @content; }
-}
-
-@mixin large {
-    @media (min-width: 1025px) { @content; }
-}
-
 // Underline
 
-@mixin underline($color: $accent_color, $size: 'regular', $bottom : 16px, $width: 100%) {
+@mixin underline($color: $accent_color, $size: 'large', $bottom : 16px, $width: 100%) {
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -27,12 +12,11 @@
         width: $width;
         position: absolute;
         z-index: -1;
-        left: 0;
         bottom: $bottom;
         left: 50%;
         transform: translate(-50%);
 
-        @if $size == 'regular' {
+        @if $size == 'large' {
             height: 21px;
             clip-path: polygon(0 5%, 98% 0, 100% 100%, 0 93%);;
         }
@@ -40,6 +24,15 @@
         @if $size == 'small' {
             height: 8px;
             clip-path: polygon(0 7%, 98% 0, 100% 100%, 0 93%);
+        }
+
+        @if $size == 'medium' {
+            height: 14px;
+            clip-path: polygon(0 7%, 98% 0, 100% 100%, 0 93%);
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: 14px;
         }
     }
 }

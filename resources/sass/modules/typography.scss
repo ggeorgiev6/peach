@@ -63,7 +63,7 @@ h1,
     font-weight: 600;
     letter-spacing: .81px;
 
-    @include mobile {
+    @include media-breakpoint-down(sm) {
         font-size: 40px;
         letter-spacing: .6px;
     }

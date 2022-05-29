@@ -8,6 +8,18 @@
     background-position: center bottom -334px;
     background-size: 127%;
     background-repeat: no-repeat;
+
+   @media all and (max-width: 1250px) {
+        background-position: center;
+        background-size: 153%;
+        background-repeat: repeat;
+    }
+
+    @include media-breakpoint-down(md) {
+        background-position: center;
+        background-size: 368%;
+        background-repeat: repeat;
+    }
 }
 
 .introLeftSection {
@@ -44,6 +56,10 @@
     position: relative;
     padding: 5px 13px;
     font-weight: 500;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 
+    }
 
     &::before {
         content: '';

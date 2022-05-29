@@ -2,6 +2,7 @@
     padding: 90px 0;
     background-color: $accent-color;
     position: relative;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 
     &::before {
         content: '';
@@ -11,6 +12,9 @@
         width: 100%;
         height: 100%;
         @include pattern-shape;
+        background-position: center top -325px;
+        background-size: 127%;
+        background-repeat: no-repeat;
     }
 }
 
@@ -23,16 +27,18 @@
     position: relative;
     clip-path: polygon(5% 0, 95% 0, 100% 95%, 0% 100%);
     padding: 76px 108px  83px 113px;
+    max-width: 676px;
+    margin: auto;
 }
 
 .callbackTitle {
-    margin-top: 15px;
+    margin-top: 23px;
 
     u {
-        @include underline($primary_color);
+        @include underline($color: $primary_color, $bottom: 1px, $width: 105%);
     }
 }
 
 .callbackBtn {
-    margin-top: 18px;
+    margin-top: 37px;
 }

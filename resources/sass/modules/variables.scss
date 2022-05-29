@@ -28,11 +28,20 @@ $caption-font-size-mobile: 44px;
 // Bootstrap variables
 
 $container-max-widths: (
+  sm: 520px,
+  md: 700px,
+  lg: 940px,
+  xl: 1120px,
+  xxl: 1220px
+);
+
+$grid-breakpoints: (
+  xs: 0,
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1240px
+  xxl: 1600px
 );
 
 $grid-gutter-width: 40px;

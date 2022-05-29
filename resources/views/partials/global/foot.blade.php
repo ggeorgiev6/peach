@@ -7,7 +7,7 @@
                     <img class="footerLogo" src="/images/elation-brandmark-logo.svg" alt="">
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-2 px-2">
                    <div class="footerNavListWrap">
                        <div class="footerNavListTitle text-primary fw-semi-bold">Products</div>
                        <ul class="footerNavList">
@@ -24,7 +24,7 @@
                    </div>
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-2 px-2">
                    <div class="footerNavListWrap">
                        <div class="footerNavListTitle text-primary fw-semi-bold">Company</div>
                        <ul class="footerNavList">
@@ -116,7 +116,7 @@
                     </div>
 
                     <div class="footerSubscribeLink">
-                        <a href="#" class="textButton">
+                        <a href="#" class="textButton text-primary footerSubscribeLinkItem">
                            Sign Up
                         </a>
                     </div>
@@ -124,11 +124,15 @@
 
             </div>
 
-            <div class="row footerBottomRow text-white">
+            <div class="row footerBottomRow text-white align-items-end">
 
                 <div class="col-12 col-lg-2">
-                    &copy; 2019 Elation.<br>
-                    All rights reserved.
+
+                    <div class="copyrightNotice">
+                        &copy; 2019 Elation.<br>
+                        All rights reserved.
+                    </div>
+                   
                 </div>
 
                 <div class="col-12 col-lg-2">

@@ -7,7 +7,7 @@
                     <h5 class="text-secondary latestNewsHeading">
                         The <u>latest  </u>
                     </h5>
-                    <a class="textButton" href="">
+                    <a class="textButton text-primary" href="">
                         All News
                     </a>
                 </div>

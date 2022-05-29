@@ -11,7 +11,7 @@
 
                             <div class="testimonialsInnerWrap">
 
-                                    <div class="testimonialsInnerText h2 text-secondary">
+                                    <div class="testimonialsInnerText h2 text-secondary fw-semi-bold">
                                         You have taken the time to understand us, our values
                                         and culture and have delivered far more than we could have hoped for.
                                     </div>
@@ -21,7 +21,7 @@
                                         Grosvenor Consultancy
                                     </div>
 
-                                    <div class="testimonialsCompany text-primary">
+                                    <div class="testimonialsCompany h3 text-primary">
                                         Growth Academy
                                     </div>
                             </div>
@@ -32,7 +32,7 @@
 
                             <div class="testimonialsInnerWrap">
 
-                                <div class="testimonialsInnerText h2 text-secondary">
+                                <div class="testimonialsInnerText h2 text-secondary fw-semi-bold">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                 </div>
@@ -42,7 +42,7 @@
                                     Grosvenor Consultancy
                                 </div>
 
-                                <div class="testimonialsCompany text-primary">
+                                <div class="testimonialsCompany h3 text-primary">
                                     Growth Academy
                                 </div>
 

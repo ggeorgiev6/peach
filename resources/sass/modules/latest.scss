@@ -1,5 +1,5 @@
 .latestNewsSection {
-    padding: 102px 0 109px;
+    padding: 106px 0 109px;
 }
 
 .latestNewsHeading {
@@ -8,7 +8,7 @@
     margin-right: auto;
 
     u {
-        @include underline($primary-color);
+        @include underline($color: $primary-color, $width: 104%, $bottom: 7px);
         padding-right: 28px;
     }
 }
@@ -28,7 +28,7 @@
 
     &:nth-child(2) {
 
-        @include large {
+        @include media-breakpoint-down(xl) {
             margin-top: 70px;
         }
     }

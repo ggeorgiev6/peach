@@ -12,6 +12,13 @@
             display: block;
         }
     }
+
+    .swiper-slide {
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+    }
 }
 
 .sliderSection {
@@ -22,6 +29,12 @@
     z-index: 30;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
     margin-bottom: -43px;
+
+    @include media-breakpoint-down(md) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 150px;
+    }
 }
 
 .sliderText {
@@ -32,8 +45,17 @@
     line-height: 84px;
     max-width: 700px;
 
-    @include mobile {
+    @include media-breakpoint-down(xl) {
+        font-size: $caption-font-size-mobile;
+        line-height: 1.4;
+    }
+    
+    @include media-breakpoint-down(sm) {
         font-size:  $caption-font-size-mobile;
+    }
+
+    @media all and (max-width: 380px) {
+        font-size:  32px;
     }
 
     u {
@@ -52,6 +74,10 @@
 .sliderButton {
     display: inline-block;
     margin-top: 60px;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 30px;
+    }
 }
 
 .sliderImage {
@@ -60,12 +86,44 @@
     transform: translateY(-50%);
     max-width: 818px;
     right: -5.5%;
+
+    @include media-breakpoint-down(xxl) {
+        max-width: 47%;
+    }
+
+    @include media-breakpoint-down(md) {
+        position: relative;
+        transform: none;
+        top: 0;
+        right: 0;
+        max-width: 520px;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    img {
+        
+        @include media-breakpoint-down(md) {
+            width: 50%;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 0 20px;
+            width: 70%;
+        }
+    }
 }
 
 .sliderControlsWrap {
     margin: 112px 0 96px;
     z-index: 10;
     position: relative;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+        margin: 40px 0 96px;
+    }
 }
 
 .slider-pagination {
@@ -90,11 +148,6 @@
         }
 
     }
-}
-
-.sliderControlsWrap {
-    display: flex;
-    align-items: center;
 }
 
 .topSliderNav {
