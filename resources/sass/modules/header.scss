@@ -4,9 +4,34 @@ header {
     width: 100%;
     z-index: 100;
     padding: 37px 0;
+    transition: all .3s ease;
+    visibility: hidden;
+    opacity: 0;
 
     @include media-breakpoint-up(xxl) {
         padding: 37px 34px;
+    }
+
+    path.logoElement {
+        transition: fill .4s ease-in;
+    }
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.scrollTop {
+        background-color: $secondary-color;
+        padding: 26px 0;
+
+        @include media-breakpoint-up(xxl) {
+            padding: 23px 34px;
+        }
+
+        .logoElement {
+            fill: $accent-color;
+        }
     }
 }
 
@@ -28,10 +53,11 @@ header {
     margin-right: auto;
 
     svg {
+        height: 55px;
+        width: auto;
 
         @include media-breakpoint-down(md) {
             height: 40px;
-            width: auto;
         }
     }
 }
@@ -46,7 +72,7 @@ header {
     padding: 55px 106px;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: all .5s ease-in-out;
     transform: translateX(100%);
     z-index: 400;
     top: 0;
@@ -72,9 +98,11 @@ header {
 .menuTrigger {
 
     svg {
+        height: 21px;
+        width: auto;
+
         @include media-breakpoint-down(md) {
             height: 16px;
-            width: auto;
         }
     }
 
