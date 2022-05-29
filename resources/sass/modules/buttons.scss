@@ -27,6 +27,7 @@ button {
             border-bottom: 0;
             width: 12px;
             height: 91%;
+            box-sizing: unset;
         }
 
         &::after {
@@ -41,11 +42,12 @@ button {
             border-left: 0;
             border-top: 0;
             transform: skew(4deg) rotate(1deg);
+            box-sizing: unset;
         }
 
         .outline {
             position: absolute;
-            clip-path: $theme-shape;
+            clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);;
             top: 25px;
             left: -25px;
             transition: all .3s;
@@ -91,7 +93,7 @@ button {
         }
 
         &.solid {
-            clip-path: $theme-shape;
+            clip-path: polygon(0 5%, 96% 0, 100% 100%, 0 93%);;
             background-color: $accent_color;
             color: #fff;
 

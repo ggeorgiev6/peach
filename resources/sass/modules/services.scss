@@ -1,6 +1,9 @@
 .serviceSection {
     padding: 197px 0 183px;
     background-color: $secondary_color;
+    margin-top: -42px;
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
+    margin-bottom: -53px;
 }
 
 .serviceHeading {
@@ -10,14 +13,14 @@
     line-height: 1.1;
 
     u {
-        @include underline($primary_color);
-        line-height: 1.3
+        @include underline($color: $primary_color, $bottom: 5px, $width: 104%);
     }
 }
 
 .serviceSubtitle {
-    margin-top: 24px;
+    margin-top: 40px;
     padding: 0 20px;
+    line-height: 1.3;
 }
 
 .serviceBlocks {
@@ -25,8 +28,12 @@
 }
 
 .serviceBlock {
-    clip-path: polygon(0 0, 100% 3%, 100% 98%, 2% 100%);
-    padding: 63px 35px;
+    clip-path: polygon(0 0, 100% 2%, 100% 98%, 2% 100%);
+    padding: 59px 34px 58px;
+    max-width: 384px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .serviceBlockText {
@@ -34,6 +41,18 @@
     ul {
         @include theme-list;
         text-align: left;
+
+        li {
+            padding-left: 18px;
+            margin-top: 7px;
+
+            &::before {
+                width: 5px;
+                height: 5px;
+                background-size: 100%;
+                mask-size: contain;
+            }
+        }
     }
 }
 
@@ -44,10 +63,11 @@
 
 .serviceBlockText {
     margin-top: 16px;
-    font-weight: 500;
+    margin-bottom: auto;
 }
 
 .serviceBlockLink {
-    margin-top: 28px;
+    margin-top: 16px;
     display: block;
+    margin-bottom: auto;
 }

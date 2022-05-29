@@ -4,14 +4,16 @@
     display: block;
     z-index: 4;
     margin-top: -22px;
-
     @include pattern-background;
-  
+    background-position: center bottom -334px;
+    background-size: 127%;
+    background-repeat: no-repeat;
 }
 
 .introLeftSection {
     position: relative;
     margin-top: 184px;
+    max-width: 530px;
 
     &::before {
         content: '';
@@ -22,14 +24,14 @@
         width: 100%;
         height: 100%;
         background-color: #fff;
-        clip-path: $theme-shape;
         z-index: -1;
-        padding: 63px 66px 79px 93px;
+        padding: 34px 66px 122px 93px;
         box-sizing: unset;
+        clip-path: polygon(0.5% 0, 97% 0, 100% 97%, 0 100%);
     }
 
     u {
-        @include underline;
+        @include underline($bottom: 4px, $width: 103% );
     }
 }
 
@@ -38,9 +40,9 @@
 }
 
 .introRightSection {
-    margin-top: 438px;
+    margin-top: 426px;
     position: relative;
-    padding: 10px;
+    padding: 5px 13px;
     font-weight: 500;
 
     &::before {
@@ -52,9 +54,9 @@
         width: 100%;
         height: 100%;
         background-color: #fff;
-        clip-path: polygon(0 7%, 89% 0, 100% 92%, 8% 100%);
+        clip-path: polygon(0 2%, 96% 0, 100% 97%, 3% 100%);
         z-index: -1;
-        padding: 61px 51px 39px 75px;
+        padding: 82px 44px 26px 57px;
         box-sizing: unset;
     }
 

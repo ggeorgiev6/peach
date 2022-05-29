@@ -15,7 +15,7 @@
 
 // Underline
 
-@mixin underline($color: $accent_color, $size: 'regular') {
+@mixin underline($color: $accent_color, $size: 'regular', $bottom : 16px, $width: 100%) {
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -24,20 +24,21 @@
     &::before {
         content: '';
         background: $color;
-        width: 100%;
+        width: $width;
         position: absolute;
         z-index: -1;
         left: 0;
+        bottom: $bottom;
+        left: 50%;
+        transform: translate(-50%);
 
         @if $size == 'regular' {
             height: 21px;
-            bottom: 16px;
-            clip-path: $theme-shape;
+            clip-path: polygon(0 5%, 98% 0, 100% 100%, 0 93%);;
         }
 
         @if $size == 'small' {
             height: 8px;
-            bottom: 4px;
             clip-path: polygon(0 7%, 98% 0, 100% 100%, 0 93%);
         }
     }
@@ -64,7 +65,7 @@
 }
 
 @mixin pattern-background {
-    background-image: url('/images/patterns/pattern-bg-lg.svg');
+    background-image: url('/images/patterns/pattern-bg-lg2.svg');
     background-position: center -5px;
     background-size: cover;
     background-repeat: no-repeat;

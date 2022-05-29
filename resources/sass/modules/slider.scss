@@ -15,11 +15,13 @@
 }
 
 .sliderSection {
-    padding-top: 230px;
+    padding-top: 237px;
     background-color: $primary-color;
     position: relative;
     overflow: hidden;
     z-index: 30;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    margin-bottom: -43px;
 }
 
 .sliderText {
@@ -36,24 +38,32 @@
 
     u {
         @include underline;
+        padding: 0 3px;
+
+        &::before {
+            bottom: 4px;
+            left: 52%;
+            transform: translateX(-50%);
+            width: 108%;
+        }
     }
 }
 
 .sliderButton {
     display: inline-block;
-    margin-top: 44px;
+    margin-top: 60px;
 }
 
 .sliderImage {
     position: absolute;
-    top: 50%;
+    top: 48.8%;
     transform: translateY(-50%);
     max-width: 818px;
-    left: 53%;
+    right: -5.5%;
 }
 
 .sliderControlsWrap {
-    margin: 126px 0 86px;
+    margin: 112px 0 96px;
     z-index: 10;
     position: relative;
 }

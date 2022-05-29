@@ -1,13 +1,54 @@
 .ctaSection {
-    padding-top: 165px;
-    @include pattern-background;
+    padding: 165px 0 150px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+    margin-bottom: -34px;
+    z-index: 23;
+    
+    &::before {
+        content: '';
+        transform: scaleX(-1);
+        @include pattern-background;
+        background-position: center bottom -143px;
+        background-size: 127%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-fluid {
+        position: relative;
+    }
 }
 
 .ctaBlock {
-    padding: 47px 52px 46px 91px;
+    padding: 47px 48px 46px 91px;
     clip-path: polygon(4% 0, 96% 0, 100% 96%, 0 100%);
+    max-width: 556px;
+    margin-left: auto;
+    transform: translateX(59px);
 }
 
 .ctaSectionBtn {
     margin-top: 30px;
+}
+
+.ctaBlockHeading {
+
+    u {
+        @include underline ($color: $accent_color, $bottom: 2px)
+    }
+}
+
+.ctaImageBlock {
+    position: absolute;
+    left: 3%;
+    top: -49px;
+}
+
+.ctaSectionText {
+    margin-top: 20px;
 }

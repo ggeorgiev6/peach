@@ -1,4 +1,6 @@
 require('./bootstrap');
+// import '@babel/polyfill';
+
 import Vue from 'vue';
 // Import Swiper Vue.js components
 import Swiper from 'swiper/bundle';
@@ -26,10 +28,10 @@ if (document.querySelector(".sliderSection")) {
             crossFade: true, 
         },
         virtualTranslate: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: true,
-        },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: true,
+        // },
         speed: 1000, 
         slidersPerView: 1,
         effect: "fade",

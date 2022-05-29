@@ -23,7 +23,7 @@
                     <div class="serviceBlockIntro ">
                         The Business Growth Framework is our full consultancy approach programme. 
                     </div>
-                    <div class="serviceBlockText">
+                    <div class="serviceBlockText fw-semi-bold">
                         <p>
                             Perfect for your business if you:
                         </p>
@@ -35,7 +35,7 @@
                             <li>Available budget to invest</li>
                         </ul>
                     </div>
-                    <a class="textButton serviceBlockLink" href="#">
+                    <a class="textButton serviceBlockLink text-primary" href="#">
                         Learn more
                     </a>
                 </div>
@@ -49,7 +49,7 @@
                     <div class="serviceBlockIntro ">
                         Perfect for businesses who  want to master The Growth Framework for themselves. 
                     </div>
-                    <div class="serviceBlockText">
+                    <div class="serviceBlockText fw-semi-bold">
                         <p>
                             Perfect for your business if you:
                         </p>
@@ -61,7 +61,7 @@
                             <li>Limited budget to invest</li>
                         </ul>
                     </div>
-                    <a class="textButton serviceBlockLink" href="#">
+                    <a class="textButton serviceBlockLink text-primary" href="#">
                         Learn more
                     </a>
                 </div>
@@ -75,7 +75,7 @@
                     <div class="serviceBlockIntro ">
                         The Growth Club provides a focused, supportive space for you to work on your business. 
                     </div>
-                    <div class="serviceBlockText">
+                    <div class="serviceBlockText fw-semi-bold">
                         <p>
                             Perfect for your business if you:
                         </p>
@@ -86,7 +86,7 @@
                             <li>Prepared to do things differently</li>
                         </ul>
                     </div>
-                    <a class="textButton serviceBlockLink" href="#">
+                    <a class="textButton serviceBlockLink text-primary" href="#">
                         Learn more
                     </a>
                 </div>
