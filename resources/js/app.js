@@ -1,4 +1,6 @@
 require('./bootstrap');
+require('intersection-observer');
+
 import '@babel/polyfill';
 
 import Vue from 'vue';
