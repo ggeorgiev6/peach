@@ -48,6 +48,13 @@
     @include media-breakpoint-down(md) {
         margin-top: 40px;
     }
+
+    @for $i from 1 to 4 {
+
+        .cardCol:nth-child(#{$i}) { 
+            animation-delay: $i * 0.25s; 
+        }
+    }
 }
 
 .cardCol {
@@ -63,4 +70,6 @@
             margin-top: 0;
         }
     }
+
+    
 }

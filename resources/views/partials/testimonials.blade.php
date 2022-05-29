@@ -1,7 +1,7 @@
 <section class="testimonialsSection">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 fadeInBottom scrollItem">
                
                 <div class="testimonialsSwiper swiper">
             
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="testimonialImg">
-        <img class="lazy" data-src="/images/testimonial-puzzle.png" alt="">
+    <div class="testimonialImg ">
+        <img class="lazy fadeInLeft scrollItem" data-src="/images/testimonial-puzzle.png" alt="">
     </div>
 </section>

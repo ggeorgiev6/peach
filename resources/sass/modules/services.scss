@@ -56,6 +56,7 @@
     @include media-breakpoint-down(sm) {
         font-size: 21px;
         padding: 0 12px;
+        line-height: 1.45;
     }
 }
 
@@ -64,6 +65,17 @@
 
     @include media-breakpoint-down(xl) {
         margin-top: 45px;
+    }
+
+    @for $i from 1 to 4 {
+
+        .serviceBlockWrap:nth-child(#{$i}) { 
+
+            .serviceBlock {
+                animation-delay: $i * 0.25s; 
+            }
+            
+        }
     }
 }
 

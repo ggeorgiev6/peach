@@ -4,10 +4,10 @@
 
             <div class="col-12">
                 <div class="latestNewsHeadWrap">
-                    <h5 class="text-secondary latestNewsHeading">
+                    <h5 class="text-secondary latestNewsHeading fadeInRight scrollItem">
                         The <u>latest  </u>
                     </h5>
-                    <a class="textButton text-primary" href="">
+                    <a class="textButton text-primary fadeInLeft scrollItem" href="">
                         All News
                     </a>
                 </div>
@@ -17,7 +17,7 @@
 
         <div class="row cardsRow">
 
-            <div class="col-12 col-md-6 col-xl-4 cardCol">
+            <div class="col-12 col-md-6 col-xl-4 cardCol fadeInBottom scrollItem">
 
                 <div class="card">
                     <a href="">
@@ -38,7 +38,7 @@
 
             </div>
 
-            <div class="col-12 col-md-6 col-xl-4 cardCol">
+            <div class="col-12 col-md-6 col-xl-4 cardCol fadeInBottom scrollItem">
 
                 <div class="card">
                     <a href="">
@@ -59,7 +59,7 @@
 
             </div>
 
-            <div class="col-12 col-md-6 col-xl-4 cardCol">
+            <div class="col-12 col-md-6 col-xl-4 cardCol fadeInBottom scrollItem">
 
                 <div class="card">
                     <a href="">

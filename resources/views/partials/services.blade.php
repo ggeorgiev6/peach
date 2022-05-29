@@ -15,8 +15,8 @@
         </div>
 
         <div class="row serviceBlocks">
-            <div class="col-12 mb-4 mb-xl-0 col-xl-4">
-                <div class="serviceBlock bg-white text-secondary">
+            <div class="col-12 mb-5 mb-xl-0 col-xl-4 serviceBlockWrap">
+                <div class="serviceBlock bg-white text-secondary fadeInBottom scrollItem">
                     <div class="serviceLogo">
                         <img src="/images/growth_framework_logo.svg" alt="">
                     </div>
@@ -41,8 +41,8 @@
                 </div>
             </div>
 
-            <div class="col-12 mb-4 mb-xl-0 col-xl-4">
-                <div class="serviceBlock bg-white text-secondary">
+            <div class="col-12 mb-5 mb-xl-0 col-xl-4 serviceBlockWrap">
+                <div class="serviceBlock bg-white text-secondary fadeInBottom scrollItem">
                     <div class="serviceLogo">
                         <img src="/images/growth_academy_logo.svg" alt="">
                     </div>
@@ -67,8 +67,8 @@
                 </div>
             </div>
 
-            <div class="col-12 mb-4 mb-xl-0 col-xl-4">
-                <div class="serviceBlock bg-white text-secondary">
+            <div class="col-12 mb-5 mb-xl-0 col-xl-4 serviceBlockWrap">
+                <div class="serviceBlock bg-white text-secondary fadeInBottom scrollItem">
                     <div class="serviceLogo">
                         <img src="/images/growth_club_logo.svg" alt="">
                     </div>

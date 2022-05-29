@@ -2,11 +2,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 offset-lg-1 col-lg-4">
-                <div class="ctaImageBlock">
+                <div class="ctaImageBlock ">
                     <img class="lazy" data-src="/images/user-img.png" alt="">
                 </div>
             </div>
-            <div class="col-12 offset-lg-1 col-lg-5">
+            <div class="col-12 offset-lg-1 col-lg-5 fadeInLeft scrollItem">
                 <div class="ctaBlock bg-primary text-white">
                     <h3 class="h1 ctaBlockHeading">
                        <u>Passionate</u> about success & growth.

@@ -11,7 +11,6 @@ Vue.use(SvgVue);
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
-
 Vue.component('navigation', require('./components/Navigation.vue').default);
 
 // Create a new Vue app

@@ -36,6 +36,10 @@
         flex-direction: column-reverse;
         padding-top: 150px;
     }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 110px;
+    }
 }
 
 .sliderText {
@@ -133,6 +137,7 @@
     align-items: center;
     justify-content: start;
     margin-right: auto;
+    animation-delay: .9s;
 
     .swiper-pagination-bullet {
         width: 10px;
@@ -153,6 +158,7 @@
 
 .topSliderNav {
     cursor: pointer;
+    animation-delay: 1.5s;
 
     &:hover {
 
@@ -170,4 +176,12 @@
 
 .topSliderNavPrev {
     margin-right: 18px;
+}
+
+.sliderImageInner {
+    animation-delay: 1.25s;
+
+    @include media-breakpoint-down(md) {
+        animation-delay: .4s;
+    }
 }

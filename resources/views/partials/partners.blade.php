@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="partnersSliderWrap text-center ">
+                <div class="partnersSliderWrap text-center fadeInBottom scrollItem">
                     <h4 class="partnersSliderHeading h3 text-primary">People we work with</h4>
                     <div class="partnersSlider swiper">
                         <div class="swiper-wrapper">

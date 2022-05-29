@@ -40,11 +40,11 @@
 
               <div class="col-12">
                     <div class="sliderControlsWrap">
-                        <div class="slider-pagination swiper-pagination-slider"></div>
-                        <div class="topSliderNav topSliderNavPrev swiper-button-prev">
+                        <div class="slider-pagination swiper-pagination-slider fadeInBottom scrollItem"></div>
+                        <div class="topSliderNav topSliderNavPrev swiper-button-prev fadeInLeft scrollItem">
                             {!! file_get_contents('images/icons/arrow-left.svg') !!}
                         </div>
-                        <div class="topSliderNav topSliderNavNext swiper-button-next">
+                        <div class="topSliderNav topSliderNavNext swiper-button-next fadeInLeft scrollItem">
                             {!! file_get_contents('images/icons/arrow-right2.svg') !!}
                         </div>
                     </div>
@@ -53,7 +53,7 @@
       </div>
 
       <div class="sliderImage">
-          <img src="/images/banner-image.png" alt="">
+          <img class="fadeInLeft scrollItem sliderImageInner" src="/images/banner-image.png" alt="">
       </div>
    
     
