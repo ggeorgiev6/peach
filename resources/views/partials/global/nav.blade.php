@@ -21,7 +21,7 @@
     </div>
 </header>
 
-<div class="sideNavWrap bg-secondary">
+<div class="sideNavWrap bg-secondary" style="visibility:hidden;opacity:0;">
                     
 
                     <div class="closeSideMenuWrap">
