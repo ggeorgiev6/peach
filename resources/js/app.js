@@ -87,6 +87,19 @@ if (document.querySelector(".partnersSlider")) {
             draggable: true,
             dragSize: 100,
           },
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            900: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1400: {
+
+            }
+        }
     });
   }
 

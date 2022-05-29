@@ -4,6 +4,11 @@
     clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
     margin-bottom: -34px;
     z-index: 23;
+
+    @include media-breakpoint-down(lg) {
+        padding: 158px 0 70px;
+        background: #fff;
+    }
     
     &::before {
         content: '';
@@ -17,6 +22,22 @@
         left: 0;
         width: 100%;
         height: 100%;
+
+        @include media-breakpoint-down(xl) {
+            background-size: 147%;
+        }
+
+        
+        @include media-breakpoint-down(lg) {
+            background-position: top 19% center;
+            background-size: 318%;
+            background-repeat: repeat;
+        }
+
+        @include media-breakpoint-down(sm) {
+            background-size: 448%;
+        }
+       
     }
 
     .container-fluid {
@@ -30,6 +51,18 @@
     max-width: 556px;
     margin-left: auto;
     transform: translateX(59px);
+
+    @include media-breakpoint-down(lg) {
+        padding: 65px 64px 62px 78px;
+        transform: none;
+        max-width: 86%;
+        margin: auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 65px 40px 62px 47px;
+        max-width: unset;
+    }
 }
 
 .ctaSectionBtn {
@@ -37,6 +70,14 @@
 }
 
 .ctaBlockHeading {
+
+    @include media-breakpoint-down(xl) {
+        font-size: 44px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 30px;
+    }
 
     u {
         @include underline ($color: $accent_color, $bottom: 2px)
@@ -47,6 +88,25 @@
     position: absolute;
     left: 3%;
     top: -49px;
+
+    @media all and (max-width: 1600px) {
+        position: absolute;
+        left: -7%;
+        top: unset;
+        bottom: -185px;
+
+        img {
+            width: 63vw;
+            max-width: 800px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+    }
 }
 
 .ctaSectionText {

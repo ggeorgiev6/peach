@@ -1,11 +1,23 @@
 .latestNewsSection {
     padding: 106px 0 109px;
+
+    @include media-breakpoint-down(md) {
+        padding: 47px 0 13px;
+    }
 }
 
 .latestNewsHeading {
     font-size: $caption-font-size;
     font-weight: 600;
     margin-right: auto;
+
+    @include media-breakpoint-down(md) {
+       font-size: $caption-font-size-mobile;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin: auto;
+     }
 
     u {
         @include underline($color: $primary-color, $width: 104%, $bottom: 7px);
@@ -18,18 +30,37 @@
     grid-gap: 30px;
     justify-content: space-between;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+    }
 }
 
 .cardsRow {
     margin-top: 90px;
+
+    @include media-breakpoint-down(xl) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-top: 40px;
+    }
 }
 
 .cardCol {
 
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 40px;
+    }
+
     &:nth-child(2) {
+        margin-top: 70px;
 
         @include media-breakpoint-down(xl) {
-            margin-top: 70px;
+            margin-top: 0;
         }
     }
 }

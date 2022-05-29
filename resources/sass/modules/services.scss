@@ -4,6 +4,17 @@
     margin-top: -42px;
     clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
     margin-bottom: -53px;
+    z-index: 44;
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+        clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 99%);
+        padding: 100px 0 130px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        margin-bottom: -100px;
+    }
 }
 
 .serviceHeading {
@@ -12,8 +23,24 @@
     font-weight: 600;
     line-height: 1.1;
 
+    @include media-breakpoint-down(lg) {
+        font-size: $caption-font-size-mobile;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 34px;
+    }
+
+
     u {
         @include underline($color: $primary_color, $bottom: 5px, $width: 104%);
+
+        @include media-breakpoint-down(lg) {
+            
+            &::before {
+                bottom: 1px;
+            }
+        }
     }
 }
 
@@ -21,10 +48,23 @@
     margin-top: 40px;
     padding: 0 20px;
     line-height: 1.3;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 26px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 21px;
+        padding: 0 12px;
+    }
 }
 
 .serviceBlocks {
     margin-top: 114px;
+
+    @include media-breakpoint-down(xl) {
+        margin-top: 45px;
+    }
 }
 
 .serviceBlock {
@@ -34,13 +74,34 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    @include media-breakpoint-down(xl) {
+        margin: auto;
+        max-width: 80%;
+        text-align: center
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: unset;
+        padding: 59px 29px 58px;
+    }
 }
 
 .serviceBlockText {
+    margin-top: 16px;
+    margin-bottom: auto;
 
     ul {
         @include theme-list;
         text-align: left;
+        
+        @include media-breakpoint-down(xl) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
         li {
             padding-left: 18px;
@@ -59,11 +120,10 @@
 .serviceBlockIntro {
     margin-top: 25px;
     max-width: 300px;
-}
 
-.serviceBlockText {
-    margin-top: 16px;
-    margin-bottom: auto;
+    @include media-breakpoint-down(xl) {
+        max-width: unset;
+    }
 }
 
 .serviceBlockLink {

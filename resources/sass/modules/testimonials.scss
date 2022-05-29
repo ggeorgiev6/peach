@@ -2,6 +2,16 @@
     background-color: #F7F7F7;
     padding: 238px 0 184px;
     position: relative;
+
+    @include media-breakpoint-down(lg) {
+        padding: 134px 0 66px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 74px 0;
+    }
 } 
 
 .testimonialsControlsWrap {
@@ -26,11 +36,34 @@
     right: 30px;
     width: 50%;
     text-align: center;
+
+    @include media-breakpoint-down(xl) {
+        width: 45%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        top: 0;
+        transform: none;
+        right: 0;
+        margin: 0 auto 50px;
+    }
 }
 
 .testimonialsInnerText {
     max-width: 596px;
     line-height: 1.25;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 26px;
+        padding-right: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        line-height: 1.4;
+        font-size: 20px;
+        padding-right: 20px;
+    }
     
     &::before {
         content: "“"; 
@@ -41,11 +74,28 @@
         color: #F2DC5D;
         display: block;
         line-height: 1;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 153px;
+            top: -8px;
+            left: 24px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 91px;
+            top: -8px;
+            left: 8px;
+        }
     }
 }
 
 .testimonialsAuthor {
     margin-top: 50px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 17px;
+        margin-top: 17px;
+    }
     
 }
 
@@ -59,6 +109,10 @@
 .testimonialsInnerWrap {
     padding-left: 111px;
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+        padding-left: 62px;
+    }
 }
 
 .testimonialsControlsWrap {
@@ -67,9 +121,18 @@
     @media all and (max-width: 1500px) {
         padding-left: 114px;
     }
+
+    @include media-breakpoint-down(sm) {
+        padding-left: 62px;
+        margin-top: 28px;
+    }
 }
 
 .testimonialsCompany {
     margin-top: 14px;
     font-weight: 600;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 17px;
+    }
 }

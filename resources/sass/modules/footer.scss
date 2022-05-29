@@ -2,15 +2,28 @@
     padding: 97px 0 47px;
     clip-path: polygon(0% 0, 100% 6%, 100% 100%, 0 100%);
     margin-top: -31px;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: -89px;
+    }
 }
 
 .footerNavList {
     margin-top: 41px;
 
+    @include media-breakpoint-down(lg) {
+        margin-top: 25px;
+    }
+
     li {
         list-style-type: none;
         font-weight: 500;
         margin-top: 16px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 17px;
+            margin-top: 8px;
+        }
 
         a {
 
@@ -107,6 +120,10 @@
 .footerSubscribeNotice {
     margin-top: 28px;
     max-width: 209px;
+
+    @include media-breakpoint-down(lg) {
+        max-width: unset;
+    }
 }
 
 .footerSubscribeLink {
@@ -126,12 +143,57 @@
 
 .footerBottomRow {
     margin-top: 83px;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 32px;
+    }
 }
 
 .footerBottomLink {
     @include underline($color: $primary_color, $size: 'small', $bottom: 3px);
+    display: inline;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+        display: inline-block;
+       
+        &::before {
+            bottom: 4px;
+            height: 6px;
+        }
+    }
+
+    &:hover {
+
+        &::before {
+            background-color: $accent-color;
+        }
+    }
 }
 
 .copyrightNotice {
     font-size: 16px;
+}
+
+.footerLogo {
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 25px;
+    }
+}
+
+.footerNavListWrap {
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+    }
+}
+
+.footerSocialMediaLinks {
+
+    
+    @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+    }
+
 }

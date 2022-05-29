@@ -7,7 +7,7 @@
                     <img class="footerLogo" src="/images/elation-brandmark-logo.svg" alt="">
                 </div>
 
-                <div class="col-12 col-lg-2 px-2">
+                <div class="col-6 col-lg-2 px-lg-2">
                    <div class="footerNavListWrap">
                        <div class="footerNavListTitle text-primary fw-semi-bold">Products</div>
                        <ul class="footerNavList">
@@ -24,7 +24,7 @@
                    </div>
                 </div>
 
-                <div class="col-12 col-lg-2 px-2">
+                <div class="col-6 col-lg-2 px-lg-2">
                    <div class="footerNavListWrap">
                        <div class="footerNavListTitle text-primary fw-semi-bold">Company</div>
                        <ul class="footerNavList">
@@ -41,7 +41,7 @@
                    </div>
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-6 col-lg-2">
                    <div class="footerNavListWrap">
                        <div class="footerNavListTitle text-primary fw-semi-bold">Help</div>
                        <ul class="footerNavList">
@@ -60,7 +60,7 @@
 
                 <div class="col-12 col-lg-3 offset-lg-1">
 
-                    <ul class="socialMediaLinks">
+                    <ul class="socialMediaLinks footerSocialMediaLinks">
                         <li class="socialMediaIcon">
                             <a class="" href="">
                                 <div class="socialMediaIconShape">
@@ -135,13 +135,13 @@
                    
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-2 px-lg-2">
                     <a href="" class="footerBottomLink h5 fw-medium text-white">
                         Terms & Conditions
                     </a>
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-2 px-lg-2">
                     <a href="" class="footerBottomLink h5 fw-medium text-white">
                         Privacy Policy
                     </a>

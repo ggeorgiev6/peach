@@ -4,6 +4,10 @@
     position: relative;
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 
+    @include media-breakpoint-down(lg) {
+        padding: 90px 0 154px;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -15,6 +19,12 @@
         background-position: center top -325px;
         background-size: 127%;
         background-repeat: no-repeat;
+
+        @include media-breakpoint-down(lg) {
+            background-position: top 39% center;
+            background-size: 222%;
+            background-repeat: repeat;
+        }
     }
 }
 
@@ -29,10 +39,27 @@
     padding: 76px 108px  83px 113px;
     max-width: 676px;
     margin: auto;
+
+    @include media-breakpoint-down(md) {
+        padding: 57px 57px 83px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 57px 26px 83px;
+    }
 }
 
 .callbackTitle {
     margin-top: 23px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 42px;
+        margin-top: 18px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 32px;
+    }
 
     u {
         @include underline($color: $primary_color, $bottom: 1px, $width: 105%);
@@ -41,4 +68,16 @@
 
 .callbackBtn {
     margin-top: 37px;
+}
+
+.callbackIntroTitle {
+
+    @include media-breakpoint-down(md) {
+        font-size: 28px;
+    }
+
+    
+    @include media-breakpoint-down(sm) {
+        font-size: 22px;
+    }
 }

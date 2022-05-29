@@ -17,7 +17,7 @@
 
         <div class="row cardsRow">
 
-            <div class="col-12 col-lg-4 cardCol">
+            <div class="col-12 col-md-6 col-xl-4 cardCol">
 
                 <div class="card">
                     <a href="">
@@ -38,7 +38,7 @@
 
             </div>
 
-            <div class="col-12 col-lg-4 cardCol">
+            <div class="col-12 col-md-6 col-xl-4 cardCol">
 
                 <div class="card">
                     <a href="">
@@ -59,7 +59,7 @@
 
             </div>
 
-            <div class="col-12 col-lg-4 cardCol">
+            <div class="col-12 col-md-6 col-xl-4 cardCol">
 
                 <div class="card">
                     <a href="">
