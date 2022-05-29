@@ -59,7 +59,14 @@
 }
 
 @mixin pattern-background {
-    background-image: url('/images/patterns/pattern-bg-lg2.svg');
+    background-image: url('/images/patterns/pattern-bg-main.svg');
+    background-position: center -5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin pattern-background-flipped {
+    background-image: url('/images/patterns/pattern-bg-main-flipped.svg');
     background-position: center -5px;
     background-size: cover;
     background-repeat: no-repeat;

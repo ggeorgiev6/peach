@@ -1,7 +1,7 @@
 const mix = require('laravel-mix');
 
-// require('laravel-mix-polyfill');
-// const TargetsPlugin = require('targets-webpack-plugin');
+require('laravel-mix-polyfill');
+const TargetsPlugin = require('targets-webpack-plugin');
 
 require('laravel-mix-svg-vue');
 
@@ -16,19 +16,19 @@ require('laravel-mix-svg-vue');
  |
  */
 
-//  mix.webpackConfig({
-//     plugins: [
-//         new TargetsPlugin({
-//           browsers: ['last 2 versions', 'chrome >= 41', 'IE 11'],
-//         }),
-//       ]});
+ mix.webpackConfig({
+    plugins: [
+        new TargetsPlugin({
+          browsers: ['last 2 versions', 'chrome >= 41', 'IE 11'],
+        }),
+      ]});
 
 mix.js('resources/js/app.js', 'public/js').vue().svgVue()
     .sass('resources/sass/app.scss', 'public/css')
-    // .polyfill({
-    //     enabled: true,
-    //     useBuiltIns: "usage",
-    //     targets: {"ie": 11},
-    //     debug: true,
-    //     corejs: 3, 
-    //  });
+    .polyfill({
+        enabled: true,
+        useBuiltIns: "usage",
+        targets: {"ie": 11},
+        debug: true,
+        corejs: 3, 
+     });

@@ -1,5 +1,5 @@
 require('./bootstrap');
-// import '@babel/polyfill';
+import '@babel/polyfill';
 
 import Vue from 'vue';
 import Swiper from 'swiper/bundle';
@@ -101,10 +101,9 @@ if (document.querySelector(".partnersSlider")) {
 // Side Menu animations
 
 const animatedMenuItems = document.querySelectorAll('.animatedSideItem');
-console.log(animatedMenuItems);
+
 
 Array.from(animatedMenuItems).forEach((animatedMenuItem, index) => {
-    console.log(animatedMenuItem.classList);
 
     if (animatedMenuItem.classList.contains('sideLinkItem')) {
         animatedMenuItem.classList.add('fadeInLeft')
@@ -113,6 +112,7 @@ Array.from(animatedMenuItems).forEach((animatedMenuItem, index) => {
     }
 
     animatedMenuItem.style.animationDelay = index * 0.17 + 's';
+    
 });
 
 

@@ -12,11 +12,11 @@
     
     &::before {
         content: '';
-        transform: scaleX(-1);
-        @include pattern-background;
+        @include pattern-background-flipped;
         background-position: center bottom -143px;
         background-size: 127%;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         position: absolute;
         top: 0;
         left: 0;

@@ -19,6 +19,7 @@
         background-position: center top -325px;
         background-size: 127%;
         background-repeat: no-repeat;
+        background-attachment: fixed;
 
         @include media-breakpoint-down(lg) {
             background-position: top 39% center;
